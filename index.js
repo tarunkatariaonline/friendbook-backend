@@ -23,10 +23,10 @@ app.use(userRouter)
 app.use(friendBookRouter)
 
 app.get('/',(req,res)=>{
+  console.log("hello i am here on server")
   res.json({
     message:"Welcome to the server developed by tarun kataria",
    
-
   })
 
 })
