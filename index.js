@@ -22,6 +22,14 @@ app.use(bodyParser.json())
 app.use(userRouter)
 app.use(friendBookRouter)
 
+app.get('/',(req,res)=>{
+  res.json({
+    message:"Welcome to the server developed by tarun kataria",
+   
+
+  })
+
+})
 
 app.listen(port, () => {
   console.log(`app listening on port ${port}`)
